@@ -1,0 +1,2 @@
+crear subrutina eliminar en ensamblador ARM que borre un elemento de una posicion del array
+eliminar( Pacientes, posicion)

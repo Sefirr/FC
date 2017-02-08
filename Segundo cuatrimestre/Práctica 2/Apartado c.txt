@@ -1,0 +1,1 @@
+Devolver la maxima componente del vector.

@@ -1,0 +1,35 @@
+/* c. Desarrollar un programa en código ensamblador del ARM que divida dos números
+tamaño palabra A y B y escriba el resultado en el número C mediante restas parciales
+utilizando el algoritmo del cuadro 1.4.
+C = 0
+mientras A >= B
+A = A - B
+C = C + 1
+fin mientras 
+*/
+.global start
+
+.data
+.equ CERO, 0x00
+A: .word 0x09
+B: .word 0x02
+
+.bss
+C: .space 4
+
+.text
+start: 	ldr R0, =A
+		ldr R1, =B
+		ldr R2, [R0]
+		ldr R3, [R1]
+		mov R4, #CERO
+bucle:	cmp R2,R3
+		bge fin
+		sub R2, R2, R3
+		add R5, R4, #1
+		b bucle
+fin:	str R2, [R0]
+		str R5, [R4]
+
+		b .
+		.end

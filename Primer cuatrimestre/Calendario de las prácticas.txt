@@ -1,0 +1,5 @@
+Práctica 1(Conversor de binario a Gray) - 7 de Noviembre de 2012.
+Práctica 2(Sumador completo de 4 bits) - 21 de Noviembre de 2012.
+Práctica 3(Reconocedor de secuencias) - 12 de Diciembre de 2012.
+Práctica 4(Registro multifunción) - 9 de Enero de 2013.
+Práctica 5(Circuito emulador de un ascensor) - 16 de Enero de 2013.
